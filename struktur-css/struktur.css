@@ -1,0 +1,67 @@
+:root {
+  --warna1: #4d0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: var(--warna1);
+  display: flex;
+  padding: 0.8rem 5%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  align-items: center;
+  position: fixed;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: white;
+}
+
+.navbar .navbar-logo span {
+  color: red;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  color: white;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--warna1);
+  background-color: white;
+  border-radius: 3rem;
+  transition: 0.2s;
+}
+
+.navbar .navbar-extra a {
+  color: white;
+  padding: 0.8rem 0.5rem 0;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--warna1);
+  background-color: white;
+  border-radius: 20%;
+}

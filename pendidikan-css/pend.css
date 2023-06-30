@@ -67,10 +67,13 @@ body {
 .navbar .menu a {
   color: white;
   margin: 0 0.3rem;
+  padding: 0.5rem 0.7rem 0;
 }
 
 .navbar .menu a:hover {
-  color: var(--warna1);
+  color: var(--warna2);
+  background-color: var(--warna3);
+  border-radius: 20%;
 }
 
 .navbar .hiasan a {
@@ -139,7 +142,7 @@ body {
 }
 
 /* hamburger display none */
-.menu {
+#hamburger-menu {
   display: none;
 }
 
@@ -248,21 +251,25 @@ body {
 }
 
 /* Ekstra */
-.ekstra {
+.ekstra,
+.fasilitas {
   padding: 4.8rem 3% 1.4rem;
 }
 
-.ekstra .ekstra-tra {
+.ekstra .ekstra-tra,
+.fasilitas .contennt {
   text-align: justify;
 }
 
-.ekstra .ekstra-tra h2 {
+.ekstra .ekstra-tra h2,
+.fasilitas .content h2 {
   color: #3d0000;
   font-size: 2.5rem;
   text-align: center;
 }
 
-.ekstra .ekstra-tra p {
+.ekstra .ekstra-tra p,
+.fasilitas .content p {
   margin: 0.5rem 0 1rem;
 }
 
@@ -286,6 +293,10 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.ekstra .row .img-box:hover {
+  opacity: 50%;
 }
 
 .ekstra .row .img-box h4 {
@@ -314,6 +325,32 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--warna2);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
   }
 }
 
