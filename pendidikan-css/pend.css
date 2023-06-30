@@ -1,0 +1,333 @@
+:root {
+  --warna1: #ff0000;
+  --warna2: #4d0000;
+  --warna3: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: var(--warna3);
+  color: var(--warna2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5%;
+  background-color: rgba(61, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-bottom: 1.5px solid #3d0000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+  display: inline-block;
+}
+
+.navbar .logo span {
+  color: var(--warna1);
+}
+
+.navbar .navbar-nav a {
+  font-size: 1.1rem;
+  justify-content: space-around;
+  padding: 0.5rem 2rem;
+  color: var(--warna3);
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--warna2);
+  background-color: var(--warna3);
+  border-radius: 3rem;
+  transition: 0.3s;
+}
+
+.navbar .menu a {
+  color: white;
+  margin: 0 0.3rem;
+}
+
+.navbar .menu a:hover {
+  color: var(--warna1);
+}
+
+.navbar .hiasan a {
+  color: var(--warna3);
+  font-size: 1rem;
+}
+
+/* hero start */
+.hero {
+  display: flex;
+  background-image: url(../img/bg-pendidikan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.8);
+}
+
+.hero .content {
+  padding: 12rem 0;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--warna3);
+}
+
+.hero .content h2 {
+  font-size: 2.5rem;
+  text-shadow: 2.5px 2px 1px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1.5rem;
+}
+
+.hero .content h1 {
+  font-size: 3.5rem;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.6);
+}
+
+.hero .content h1 span {
+  color: var(--warna1);
+}
+
+.hero .content .slogan {
+  margin: 1rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hero .content .slogan span {
+  color: var(--warna1);
+}
+
+.hero .content .medsos {
+  margin: 6rem 0 1.2rem;
+}
+
+.hero .content .socials a {
+  margin: 0.5rem 0.5rem;
+  color: var(--warna3);
+}
+
+.hero .content .socials a:hover {
+  color: var(--warna1);
+}
+
+/* hamburger display none */
+.menu {
+  display: none;
+}
+
+/* Paud Section start */
+.paud {
+  padding: 2rem 3% 1.4rem;
+}
+
+.paud h2,
+.paket-a h2,
+.paket-b h2,
+.paket-c h2,
+.pokjar h2,
+.slb h2,
+.lkp h2,
+.tpa h2 {
+  color: var(--warna2);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.paud .row,
+.paket-a .row,
+.paket-b .row,
+.paket-c .row,
+.pokjar .row,
+.slb .row,
+.lkp .row,
+.tpa .row {
+  display: block;
+}
+
+.paud .row .paud-img,
+.paket-a .row .A-img,
+.paket-b .row .B-img,
+.paket-c .row .C-img,
+.pokjar .row .pokjar-img,
+.slb .row .slb-img,
+.lkp .row .lkp-img,
+.tpa .row .tpa-img {
+  flex: 0 0 70rem;
+}
+
+.paud .row .paud-img img,
+.paket-a .row .A-img img,
+.paket-b .row .B-img img,
+.paket-c .row .C-img img,
+.pokjar .row .pokjar-img img,
+.slb .row .slb-img img,
+.lkp .row .lkp-img img,
+.tpa .row .tpa-img img {
+  width: 100%;
+}
+
+.paud .row .content,
+.paket-a .row .content,
+.paket-b .row .content,
+.paket-c .row .content,
+.pokjar .row .content,
+.slb .row .content,
+.lkp .row .content,
+.tpa .row .content {
+  color: var(--warna2);
+  padding: 1rem 0;
+  text-align: justify;
+}
+
+.paud .row .content p,
+.paket-a .row .content p,
+.paket-b .row .content p,
+.paket-c .row .content p,
+.pokjar .row .content p,
+.slb .row .content p,
+.lkp .row .content p,
+.tpa .row .content p {
+  margin-bottom: 0.8rem;
+}
+/* Paud Section end */
+
+/* Tambahan */
+.paket-a,
+.paket-b,
+.paket-c,
+.pokjar,
+.slb,
+.lkp,
+.tpa {
+  padding: 0 3% 1.4rem;
+}
+
+.slb .row .content h3 {
+  font-size: 1.5rem;
+}
+
+.lkp .content h3 a {
+  color: var(--warna1);
+}
+
+.lkp .content h3 a:hover {
+  color: orange;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.tpa .row .content h4 {
+  font-size: 1.2rem;
+}
+
+/* Ekstra */
+.ekstra {
+  padding: 4.8rem 3% 1.4rem;
+}
+
+.ekstra .ekstra-tra {
+  text-align: justify;
+}
+
+.ekstra .ekstra-tra h2 {
+  color: #3d0000;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.ekstra .ekstra-tra p {
+  margin: 0.5rem 0 1rem;
+}
+
+.ekstra .row {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ekstra .row .img-box {
+  width: 380px;
+  height: 300px;
+  border: 3px solid lightskyblue;
+  margin: auto;
+  margin: 0 0.7rem 2.8rem;
+}
+
+.ekstra .row .img-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.ekstra .row .img-box h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Media Queries */
+
+/* PC */
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1280px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* Handphone */
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .content h2 {
+    font-size: 1.7rem;
+  }
+}
