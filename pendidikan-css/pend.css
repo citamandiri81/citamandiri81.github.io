@@ -218,6 +218,7 @@ body {
 .lkp .row .content p,
 .tpa .row .content p {
   margin-bottom: 0.8rem;
+  font-size: 1.2rem;
 }
 /* Paud Section end */
 
@@ -236,6 +237,18 @@ body {
   font-size: 1.5rem;
 }
 
+.lkp .content h3 {
+  font-size: 1.5rem;
+}
+
+.lkp .content h4 {
+  font-size: 1.4rem;
+}
+
+.lkp .content h4 ul li {
+  font-size: 1.3rem;
+}
+
 .lkp .content h3 a {
   color: var(--warna1);
 }
@@ -247,6 +260,14 @@ body {
 }
 
 .tpa .row .content h4 {
+  font-size: 1.5rem;
+}
+
+.tpa .row .content ol li {
+  font-size: 1.2rem;
+}
+
+.slb .row .content ul li {
   font-size: 1.2rem;
 }
 
@@ -271,6 +292,7 @@ body {
 .ekstra .ekstra-tra p,
 .fasilitas .content p {
   margin: 0.5rem 0 1rem;
+  font-size: 1.2rem;
 }
 
 .ekstra .row {
@@ -299,9 +321,9 @@ body {
   opacity: 50%;
 }
 
-.ekstra .row .img-box h4 {
+.ekstra .row .img-box h3 {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -317,14 +339,14 @@ body {
 /* Laptop */
 @media (max-width: 1280px) {
   html {
-    font-size: 75%;
+    font-size: 90%;
   }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 75%;
   }
 
   .navbar .navbar-nav {
@@ -355,16 +377,8 @@ body {
 }
 
 /* Handphone */
-@media (max-width: 500px) {
+@media (max-width: 517px) {
   html {
-    font-size: 55%;
-  }
-
-  .hero .content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero .content h2 {
-    font-size: 1.7rem;
+    font-size: 65%;
   }
 }

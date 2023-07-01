@@ -208,29 +208,25 @@ body {
 }
 
 /* Program Section */
-.program h2,
+.program .content h2,
 .contact h2 {
   margin-bottom: 1rem;
 }
 
-.program .jenis-prog {
+.program .content h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.program .content p {
   text-align: left;
   max-width: 30rem;
   margin: auto;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  line-height: 1.6rem;
+  line-height: 2rem;
   margin-left: 0;
   margin-top: 0.5rem;
-}
-
-.program .program-card-program {
-  text-align: left;
-  margin-left: 0;
-  margin-top: 0.2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.6rem;
 }
 
 .program .row {
@@ -264,7 +260,7 @@ body {
 }
 
 .program .info {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
 }
@@ -346,7 +342,7 @@ footer .socials {
 
 footer .socials a {
   color: #fff;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
 }
 
 footer .socials a:hover,
@@ -387,21 +383,21 @@ footer .credit a:hover {
 /* laptop */
 @media (max-width: 1280px) {
   html {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
 /* 1080 px */
 @media (max-width: 1080px) {
   html {
-    font-size: 75%;
+    font-size: 80%;
   }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: 75%;
   }
 
   #hamburger-menu {
@@ -427,15 +423,16 @@ footer .credit a:hover {
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
+    transform-origin: center;
   }
 
   .navbar .navbar-nav a:hover:after {
-    transform: scaleX(0.2);
+    transform: scaleX(0.18);
   }
 
   .about .row {
@@ -485,6 +482,6 @@ footer .credit a:hover {
 /* Mobile Phone */
 @media (max-width: 517px) {
   html {
-    font-size: 55%;
+    font-size: 65%;
   }
 }

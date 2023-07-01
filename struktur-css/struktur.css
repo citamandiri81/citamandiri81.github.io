@@ -7,9 +7,14 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: black;
+  background-color: red;
 }
 
 .navbar {
@@ -19,7 +24,7 @@ body {
   display: flex;
   padding: 0.8rem 5%;
   box-sizing: border-box;
-  justify-content: space-around;
+  justify-content: space-between;
   top: 0;
   left: 0;
   right: 0;
@@ -57,11 +62,140 @@ body {
 
 .navbar .navbar-extra a {
   color: white;
-  padding: 0.8rem 0.5rem 0;
+  padding: 0.5rem 0.5rem 0;
+  margin-bottom: 0.1rem;
 }
 
 .navbar .navbar-extra a:hover {
   color: var(--warna1);
   background-color: white;
   border-radius: 20%;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Navbar End */
+
+/* Hero Start */
+.hero {
+  display: flex;
+  padding-top: 4.3rem;
+  box-sizing: border-box;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+}
+
+.hero .content {
+  background-color: white;
+  padding: 1rem 1rem;
+  width: 1000px;
+  position: relative;
+}
+
+.hero .content h1 {
+  color: red;
+}
+
+.hero .content .garis-atas {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin-top: 1rem;
+}
+
+.hero .content .gambar {
+  margin-top: 1.5rem;
+}
+
+.hero .content .gambar img {
+  width: 90%;
+  border: 5px solid white;
+}
+
+/* Footer start */
+footer {
+  width: 100%;
+  background-color: #4d0000;
+}
+
+footer .sosmed {
+  display: flex;
+  justify-content: center;
+}
+
+footer .sosmed a {
+  color: #b1b1b1;
+  margin: 1rem 0.5rem;
+  margin-bottom: 0;
+}
+
+footer .sosmed a:hover {
+  color: rgb(255, 255, 255);
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+}
+
+footer .links a {
+  text-decoration: none;
+  color: #b1b1b1;
+  margin: 0.5rem 1rem;
+}
+
+footer .links a:hover {
+  color: white;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1280px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--warna1);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Handphone */
+@media (max-width: 517px) {
+  html {
+    font-size: 65%;
+  }
 }
